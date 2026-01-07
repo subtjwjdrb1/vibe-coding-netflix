@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>지금 상영 중인 영화 - Nunaflix</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">Nuna<span>flix</span></div>
+      <nav class="nav">
+        <a href="#" class="nav-link active">지금 상영 중</a>
+        <a href="#" class="nav-link disabled" title="준비 중입니다">인기 영화</a>
+        <a href="#" class="nav-link disabled" title="준비 중입니다">최고 평가</a>
+      </nav>
+    </header>
+
+    <main class="main">
+      <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <h1>지금 극장에서 상영 중인 영화</h1>
+          <p>TMDB 데이터를 사용해 실시간으로 업데이트되는 영화 리스트입니다.</p>
+        </div>
+      </section>
+
+      <section class="movies-section">
+        <div class="section-header">
+          <h2>Now Playing</h2>
+          <span class="badge">실시간</span>
+        </div>
+        <div id="movie-list" class="movie-list">
+          <!-- 자바스크립트로 영화 카드가 추가됩니다 -->
+        </div>
+        <div id="loading" class="status status-loading">영화를 불러오는 중...</div>
+        <div id="error" class="status status-error" hidden>영화를 불러오지 못했습니다. 잠시 후 다시 시도해주세요.</div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>데이터 제공: TMDB (The Movie Database)</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
